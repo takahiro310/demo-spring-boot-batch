@@ -1,0 +1,25 @@
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  datasource:
+    master:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/sample
+      username: user
+      password: password
+      max-active: 3
+      max-idle: 3
+      min-idle: 3
+      initial-size: 3
+    slave:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/sample
+      username: user
+      password: password
+      max-active: 3
+      max-idle: 3
+      min-idle: 3
+      initial-size: 3
